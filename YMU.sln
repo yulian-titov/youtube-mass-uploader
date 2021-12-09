@@ -1,0 +1,61 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMU.Api", "YMU.Api\YMU.Api.csproj", "{B7582D31-A472-46E0-878B-C9973099F6F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMU.Core", "YMU.Core\YMU.Core.csproj", "{DF8F0BA9-9B08-44E9-865F-3C89185D0350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMU.Console", "YMU.Console\YMU.Console.csproj", "{817F2F13-EFBD-435F-ADD7-39B73217CF86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7582D31-A472-46E0-878B-C9973099F6F7}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{B7582D31-A472-46E0-878B-C9973099F6F7}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{B7582D31-A472-46E0-878B-C9973099F6F7}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{B7582D31-A472-46E0-878B-C9973099F6F7}.Release|anycpu.Build.0 = Release|Any CPU
+		{DF8F0BA9-9B08-44E9-865F-3C89185D0350}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{DF8F0BA9-9B08-44E9-865F-3C89185D0350}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{DF8F0BA9-9B08-44E9-865F-3C89185D0350}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{DF8F0BA9-9B08-44E9-865F-3C89185D0350}.Release|anycpu.Build.0 = Release|Any CPU
+		{817F2F13-EFBD-435F-ADD7-39B73217CF86}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{817F2F13-EFBD-435F-ADD7-39B73217CF86}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{817F2F13-EFBD-435F-ADD7-39B73217CF86}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{817F2F13-EFBD-435F-ADD7-39B73217CF86}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.VersionControlPolicy = $1
+		$0.DotNetNamingPolicy = $2
+		$2.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $3
+		$3.inheritsSet = null
+		$3.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $4
+		$4.NewLinesForBracesInTypes = False
+		$4.NewLinesForBracesInMethods = False
+		$4.NewLinesForBracesInProperties = False
+		$4.NewLinesForBracesInAccessors = False
+		$4.NewLinesForBracesInAnonymousMethods = False
+		$4.NewLinesForBracesInControlBlocks = False
+		$4.NewLinesForBracesInAnonymousTypes = False
+		$4.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$4.NewLinesForBracesInLambdaExpressionBody = False
+		$4.NewLineForElse = False
+		$4.NewLineForCatch = False
+		$4.NewLineForFinally = False
+		$4.NewLineForMembersInObjectInit = False
+		$4.NewLineForMembersInAnonymousTypes = False
+		$4.NewLineForClausesInQuery = False
+		$4.SpaceAfterControlFlowStatementKeyword = False
+		$4.scope = text/x-csharp
+		$0.TextStylePolicy = $5
+		$5.FileWidth = 80
+		$5.TabsToSpaces = True
+		$5.scope = text/plain
+		$0.StandardHeader = $6
+	EndGlobalSection
+EndGlobal
