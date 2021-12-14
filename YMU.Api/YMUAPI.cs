@@ -31,7 +31,7 @@ namespace YMU.Api {
         ShortMovies = 18,
         TravelAndEvents = 19,
         Gaming = 20,
-        Videoblogging = 21,
+        VideoBlogging = 21,
         PeopleAndBlogs = 22,
         Comedy = 23,
         Entertainment = 24,
