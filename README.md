@@ -6,7 +6,8 @@ To use this library you will have to create your own Upload Application in Googl
 Amount of videos which you can upload (or try to upload) during day is limited, so, you must request additional quotas to unleash the full potential of YMU. 
 Right now size of thumnail is also limited via YouTube to 2 MB. Size of title, description and tags also has limitations. YMU doesnt perform checks of those limitations, so, you have to deal with them by yourself.
 ## Console Application
-Console aplication could be used to upload videos with thumbnails to defferent YouTube chanels. It uses only one argument - path to the XML configuration.
+Console application is available by the followng link [YMU v1.0](https://drive.google.com/file/d/1UGohzl4tmyR1mUI8Cva-ijrBD0h7-wjA/view?usp=sharing).
+If you want to use it in your project - donwload it and unpack in suitable folder. This application could be used to upload videos with thumbnails to different YouTube chanels. It uses only one argument - path to the XML configuration.
 Here is a template XML document which you can use to create of your own:
 ```XML
 <?xml version="1.0" encoding="utf-16" ?>
@@ -105,5 +106,5 @@ async void UploadExampleMethod() {
     System.Console.WriteLine($"Upload of video '{video.VideoPath}' is  failed due to error: {result.Error}!");
 }
 ```
-#
-I'm would be happy if YMU will make your life easier. Please, ping me if you have a questions or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
+# Сonclusion
+I'm would be happy if YMU will make your life easier. Please, ping me if you have a questions, or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
