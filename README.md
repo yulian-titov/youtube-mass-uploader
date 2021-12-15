@@ -79,31 +79,27 @@ Solution consists of three projects:
 ## Code Examples
 Here is an example how you can upload single video and its thumbnail via code:
 ```C#
-async void UploadExampleMethod() {
-  var video = new Video() {
-    Privacy = Privacies.Public,
-    Category = Categories.Music,
-    Description = "Long description string",
-    Tags = new string[] { "tag1","tag2","tag3"},
-    Title = "Short title",
-    VideoPath = "/Users/Tester/YouTube/Videos/My_Video_1.mp4",
-  };
+async void VideoUploadExample() {
+    var video = new Video() {
+        VideoPath = "/Users/Tester/YouTube/Videos/My_Video_1.mp4",
+        Title = "Short title",
+        Description = "Long description string",
+        Tags = new string[] { "tag1", "tag2", "tag3" },
+        Category = Categories.Music,
+        Privacy = Privacies.Public,
+    };
 
-  var thumbnail = new Thumbnail() {
-    ThumbnailPath = "/Users/Tester/YouTube/Images/My_Thumbnail_1.png",
-  };
+    var thumbnail = new Thumbnail() {
+        ThumbnailPath = "/Users/Tester/YouTube/Images/My_Thumbnail_1.png",
+    };
 
-  var jsonSecret = "/Users/Tester/YouTube/Secret/secret.json";
-  var appName = "Test Video Uploader";
-  var channelID = "UChK-iHYx4-4O5ynuzVkUd0g";
+    var jsonSecret = "/Users/Tester/YouTube/Secret/secret.json";
+    var appName = "Test Video Uploader";
+    var channelID = "UChK-iHYx4-4O5ynuzVkUd0g";
 
-  var result = await Credentials.FromSecret(jsonSecret, appName, channelID)
-    .Authorize()
-    .Upload(video)
-    .Upload(thumbnail);
-
-  if(result.Status == Statuses.Failed)
-    System.Console.WriteLine($"Upload of video '{video.VideoPath}' is  failed due to error: {result.Error}!");
+    var result = await Credentials.FromSecret(jsonSecret, appName, channelID).Authorize().Upload(video).Upload(thumbnail);
+    if(result.Status == Statuses.Failed)
+        System.Console.WriteLine($"Upload of video '{video.VideoPath}' is  failed due to error: {result.Error}!");
 }
 ```
 # Сonclusion
