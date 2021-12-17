@@ -5,6 +5,16 @@
     <ReleaseVersion>1.0</ReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageIconUrl>https://raw.githubusercontent.com/yulian-titov/youtube-mass-uploader/main/YMU.Logo.jpg</PackageIconUrl>
+    <PackageVersion>1.0</PackageVersion>
+    <Authors>Yulian Titov</Authors>
+    <Description>YouTube Mass Uploader or YMU is an facade for YouTube Data v3 API which is very simple to use. To upload a video just call two methods 'Authorize' and 'Upload'! Here is a link to documentation: https://github.com/yulian-titov/youtube-mass-uploader</Description>
+    <Owners>Yulian Titov</Owners>
+    <PackageProjectUrl>https://github.com/yulian-titov/youtube-mass-uploader</PackageProjectUrl>
+    <PackageReleaseNotes>This is the first version of YMU which allows to upload video with thumbnail on YouTube channel specified via its ID.</PackageReleaseNotes>
+    <Summary>Uploads video with thumbnail on YouTube channel</Summary>
+    <PackageTags>youtube,video,upload,youtube video upload,ymu,youtube mass uploader,youtube mass upload</PackageTags>
+    <Title>YouTube Mass Uploader (YMU)</Title>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
