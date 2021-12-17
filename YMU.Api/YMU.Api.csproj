@@ -15,6 +15,9 @@
     <Summary>Uploads video with thumbnail on YouTube channel</Summary>
     <PackageTags>youtube,video,upload,youtube video upload,ymu,youtube mass uploader,youtube mass upload</PackageTags>
     <Title>YouTube Mass Uploader (YMU)</Title>
+    <PackageId>YouTube.Mass.Uploader</PackageId>
+    <Copyright>Copyright 2021 Yulian Titov</Copyright>
+    <DevelopmentDependency>true</DevelopmentDependency>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
