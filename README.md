@@ -102,5 +102,7 @@ async void VideoUploadExample() {
         System.Console.WriteLine($"Upload of video '{video.VideoPath}' is  failed due to error: {result.Error}!");
 }
 ```
+## Nuget Package
+You can include YMU.API as a Nuget Package - here is [link](https://www.nuget.org/packages/YouTube.Mass.Uploader/) to it.
 # Сonclusion
 I'm would be happy if YMU will make your life easier. Please, ping me if you have a questions, or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
