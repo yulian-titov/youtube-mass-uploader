@@ -1,13 +1,13 @@
 # YouTube Mass Uploader (YMU)
 ## Introduction
-YMU is a YouTube API V3 wrapper created in C#. It allows to upload video with title, description, categoty, tags and thumbnail to the YouTube chanel specified by its ID. It has simple LINQ like sintax based on extension methods and its aynchronous by its nature. You can use it to upload single or several videos at once. 
+YMU is a YouTube API V3 wrapper created in C#. It allows to upload video with title, description, category, tags and thumbnail to the YouTube channel specified by its ID. It has simple LINQ like syntax based on extension methods and it's asynchronous by its nature. You can use it to upload single or several videos at once. 
 ## Limitations
-To use this library you will have to create your own Upload Application in Google Cloud. I created tutorial video with the description of whole process.
-Amount of videos which you can upload (or try to upload) during day is limited, so, you must request additional quotas to unleash the full potential of YMU. 
-Right now size of thumnail is also limited via YouTube to 2 MB. Size of title, description and tags also has limitations. YMU doesnt perform checks of those limitations, so, you have to deal with them by yourself.
+To use this library, you will have to create your own Upload Application in Google Cloud. I created tutorial video with the description of the whole process.
+Amount of videos which you can upload (or try to upload) during day is limited, so, you must request additional quotas to unleash the full potential of YMU. 
+Right now, size of thumbnail is also limited via YouTube to 2 MB. Size of title, description and tags also has limitations. YMU doesn't perform checks of those limitations, so, you have to deal with them by yourself.
 ## Console Application
-Console application is available by the followng link [YMU v1.0](https://drive.google.com/file/d/1UGohzl4tmyR1mUI8Cva-ijrBD0h7-wjA/view?usp=sharing).
-If you want to use it in your project - donwload it and unpack in suitable folder. This application could be used to upload videos with thumbnails to different YouTube chanels. It uses only one argument - path to the XML configuration.
+Console application is available by the following link [YMU v1.0](https://drive.google.com/file/d/1UGohzl4tmyR1mUI8Cva-ijrBD0h7-wjA/view?usp=sharing).
+If you want to use it in your project - download it and unpack in a suitable folder. This application could be used to upload videos with thumbnails to different YouTube channels. It uses only one argument - path to the XML configuration.
 Here is a template XML document which you can use to create of your own:
 ```XML
 <?xml version="1.0" encoding="utf-16" ?>
@@ -25,18 +25,18 @@ DESCRIPTION
 ```
 Explanation:
 - APP_NAME - name of the application registered in Google Cloud and permission to upload videos on YouTube;
-- SECRET_PATH - path to the scret JSON file which could be downloaded form your Application Page on Google Cloud;
+- SECRET_PATH - path to the secret JSON file which could be downloaded from your Application Page on Google Cloud;
 - VIDEO_PATH - full path to the video file;
-- PRIVACY - one of the following supported prvicy modes:
-  - Public - video will be visible to everyone;
-  - Unlisted - video will be accessible via URL;
-  - Private - video will be accessible only by you;
+- PRIVACY - one of the following supported privacy modes:
+  - Public - video will be visible to everyone;
+  - Unlisted - video will be accessible via URL;
+  - Private - video will be accessible only by you;
 - CATEGORY - one of the following supported categories: FilmAndAnimation, AutoAndVehicles, Music, PetsAndAnimals, Sports, ShortMovies, TravelAndEvents, Gaming, VideoBlogging, PeopleAndBlogs, Comedy, Entertainment, NewsAndPolitics, HowtoAndStyle, Education, ScienceAndTechnology, NonprofitsAndActivism, Movies, Anime, ActionAndAdventure, Classics, Documentary, Drama, Family, Foreign, Horror, SciFiAndFantasy, Thriller, Shorts, Shows, Trailers.
-- CHANNEL_ID - channel ID which could be esilly obtained from the channel URL. Here is how it looks: ***UCy6Py3BjosZP7LjpZJO4gqA***.
+- CHANNEL_ID - channel ID, which could be easily obtained from the channel URL. Here is how it looks: ***UCy6Py3BjosZP7LjpZJO4gqA***.
 - TITLE - title of the video. It could contain only 100 symbols;
 - DESCRIPTION - description of the video. It could contain only 5000 symbols;
 - THUMBNAIL_PATH - full path to the thumbnail image file. It must not be larger then 2 MB;
-- TAGS - comma separted tags. It could contain only 500 symbols inclusing commas;
+- TAGS - comma separated tags. It could contain only 500 symbols, including commas;
 
 Here is an example of XML configuration:
 ```XML
@@ -44,7 +44,7 @@ Here is an example of XML configuration:
 <upload application="Test Video Uploader" secret="/Users/Tester/YouTube/Secret/secret.json">
     <video file="/Users/Tester/YouTube/Videos/My_Video_1.mp4" privacy="Public" category="Entertainment">
         <channel id="UChK-iHYx4-4O5ynuzVkUd0g"/>
-        <title>Really good video #1!</title>
+        <title>Excellent video #1!</title>
         <description>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis eros nunc, vel molestie tortor blandit sed. Vestibulum eget aliquet odio. Integer eu volutpat lacus, vel finibus leo. Mauris non vehicula purus.  
         </description>
@@ -53,7 +53,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis eros nu
     </video>
     <video file="/Users/Tester/YouTube/Videos/My_Video_2.mp4" privacy="Public" category="Entertainment">
         <channel id="UChK-iHYx4-4O5ynuzVkUd0g"/>
-        <title>Really good video #2!</title>
+        <title>Excellent video #2!</title>
         <description>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis eros nunc, vel molestie tortor blandit sed. Vestibulum eget aliquet odio. Integer eu volutpat lacus, vel finibus leo. Mauris non vehicula purus.  
         </description>
@@ -64,15 +64,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis eros nu
 ```
 This configuration used to upload two videos ***My_Video_1.mp4*** and ***My_Video_2.mp4*** with thumbnails ***My_Thumbnail_1.png*** and ***My_Thumbnail_2.png*** on YouTube channel with following ID: '***UChK-iHYx4-4O5ynuzVkUd0g***'. 
 ## Upload video
-To upload video (or videos) you must execute console aplication in the Terminal and specify path to the configuration file as first paramter. Here is na example:
+To upload video (or videos) you must execute console application in the Terminal and specify path to the configuration file as first parameter. Here is an example:
 ```
 dotnet /Users/Tester/YMU/YMU.Console.dll /User/Tester/YouTube/My_YMU_Configuration.xml 
 ```
-When the upload started YMU could open web browser and ask you to authorize to your channels. This procedure initiated by YouTube API and couldn't be skipped.
+When the upload started, YMU could open web browser and ask you to authorize to your channels. This procedure initiated by YouTube API and couldn't be skipped.
 
 ## Code Structure
 Solution consists of three projects:
-- YMU.Core - contains simple XML deserealizer implemented by me;
+- YMU.Core - contains simple XML deserializer implemented by me;
 - YMU.Console - contains console application logic;
 - YMU.API - the API itself. It contains only one file '**YMUAPI.cs**' which you can download and integrate into your project. Please, also make sure to add following Nuget Package to your project: '***Google.Apis.YouTube.v3***' and all of its dependencies.
 
@@ -104,5 +104,5 @@ async void VideoUploadExample() {
 ```
 ## Nuget Package
 You can include YMU.API as a Nuget Package - here is [link](https://www.nuget.org/packages/YouTube.Mass.Uploader/) to it.
-# Сonclusion
-I'm would be happy if YMU will make your life easier. Please, ping me if you have a questions, or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
+# Conclusion
+I would be happy if YMU will make your life easier. Please, ping me if you have questions, or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
