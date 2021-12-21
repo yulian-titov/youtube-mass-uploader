@@ -104,5 +104,7 @@ async void VideoUploadExample() {
 ```
 ## Nuget Package
 You can include YMU.API as a Nuget Package - here is [link](https://www.nuget.org/packages/YouTube.Mass.Uploader/) to it.
+# Sponsorship
+I will be very happy if this project helped you in solving your challenges and saved you the time that you could spend with your loved ones. I would be grateful if you support me on [Patreon](https://www.patreon.com/yulian_titov?fan_landing=true)!
 # Conclusion
-I would be happy if YMU will make your life easier. Please, ping me if you have questions, or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
+In any case, I hope that YMU will make your life easier. Please, ping me if you have questions, or you decided to use it in your project: [yulian.titov@gmail.com](yulian.titov@gmail.com). 
