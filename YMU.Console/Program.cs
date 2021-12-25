@@ -18,10 +18,6 @@ namespace YMU.Console {
         /// <param name="args">It's supports only one argument with a path to XML configuration file.</param>
         /// <returns>Default task reqired by async/await feature.</returns>
         static async Task Main(string[] args) {
-            args = new string[] {
-                "/Users/ytitov/Projects/app-vgen-client-youtube-uploader-console/Application/Upload_Configuration.xml"
-            };
-
             if(args.Length != 1) {
                 System.Console.WriteLine($"Please, specify only one argument: path to upload configuration file!");
                 return;
