@@ -28,9 +28,9 @@ Explanation:
 - SECRET_PATH - path to the secret JSON file which could be downloaded from your Application Page on Google Cloud;
 - VIDEO_PATH - full path to the video file;
 - PRIVACY - one of the following supported privacy modes:
-  - Public - video will be visible to everyone;
-  - Unlisted - video will be accessible via URL;
-  - Private - video will be accessible only by you;
+  - Public - video will be visible to everyone;
+  - Unlisted - video will be accessible via URL;
+  - Private - video will be accessible only by you;
 - CATEGORY - one of the following supported categories: FilmAndAnimation, AutoAndVehicles, Music, PetsAndAnimals, Sports, ShortMovies, TravelAndEvents, Gaming, VideoBlogging, PeopleAndBlogs, Comedy, Entertainment, NewsAndPolitics, HowtoAndStyle, Education, ScienceAndTechnology, NonprofitsAndActivism, Movies, Anime, ActionAndAdventure, Classics, Documentary, Drama, Family, Foreign, Horror, SciFiAndFantasy, Thriller, Shorts, Shows, Trailers.
 - CHANNEL_ID - channel ID, which could be easily obtained from the channel URL. Here is how it looks: ***UCy6Py3BjosZP7LjpZJO4gqA***.
 - TITLE - title of the video. It could contain only 100 symbols;
