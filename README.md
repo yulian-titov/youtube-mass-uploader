@@ -2,7 +2,7 @@
 ## Introduction
 YMU is a YouTube API V3 wrapper created in C#. It allows to upload video with title, description, category, tags and thumbnail to the YouTube channel specified by its ID. It has simple LINQ like syntax based on extension methods and it's asynchronous by its nature. You can use it to upload single or several videos at once. 
 ## Limitations
-To use this library, you will have to create your own Upload Application in Google Cloud. I created tutorial video with the description of the whole process.
+To use this library, you will have to create your own Upload Application in Google Cloud. I created [video tutorial](https://youtu.be/mp3mDT_x6ho) with the full description of the whole process.
 Amount of videos which you can upload (or try to upload) during day is limited, so, you must request additional quotas to unleash the full potential of YMU. 
 Right now, size of thumbnail is also limited via YouTube to 2 MB. Size of title, description and tags also has limitations. YMU doesn't perform checks of those limitations, so, you have to deal with them by yourself.
 ## Console Application
